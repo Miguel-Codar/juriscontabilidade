@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juris Contabilidade</title>
+    <meta name="description" content="Assessoria contábil especializada para empresas do MEI ao Lucro Real. Unidades em Cambuí e Extrema." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              juris: {
+                blue: '#29378f', // Primary
+                dark: '#1a235a', // Darker shade for hovers
+                yellow: '#fcb31b', // Secondary/Accent
+                light: '#f3f4f6', // Cool grey light
+                grey: '#4b5563', // Text body
+                line: '#e5e7eb', // Borders
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              serif: ['"Fraunces"', 'serif'],
+            },
+            borderRadius: {
+              'card': '12px',
+              'btn': '12px',
+              'input': '10px',
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(41, 55, 143, 0.08)',
+              'hover': '0 12px 30px -5px rgba(41, 55, 143, 0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #4b5563;
+        background-color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 500; /* Peso base mais forte */
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fraunces', serif;
+        font-weight: 700; /* Títulos bold */
+        color: #29378f; /* Azul primário nos títulos */
+        letter-spacing: -0.02em;
+      }
+      .text-balance {
+        text-wrap: balance;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #29378f;
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
