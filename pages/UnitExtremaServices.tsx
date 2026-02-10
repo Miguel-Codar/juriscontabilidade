@@ -36,7 +36,7 @@ const UnitExtremaServices: React.FC = () => {
             <Link to="/unidade/extrema" className="inline-flex items-center text-blue-200 hover:text-white mb-6 transition font-bold text-sm uppercase tracking-wide">
                 <ArrowLeft size={16} className="mr-2" /> Voltar para Unidade
             </Link>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-8">Serviços - Extrema</h1>
+            <h1 className="text-4xl md:text-5xl font-sora font-bold mb-8">Serviços - Extrema</h1>
              {/* Search Bar */}
              <div className="relative max-w-lg">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />

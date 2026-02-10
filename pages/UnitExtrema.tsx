@@ -1,30 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Mail, Check, TrendingUp, BarChart3, Globe, Zap } from 'lucide-react';
+import { ArrowRight, Mail, Check, TrendingUp, BarChart3, Globe, Zap, CalendarDays } from 'lucide-react';
 
 const UnitExtrema: React.FC = () => {
+  const [extremaBgLoaded, setExtremaBgLoaded] = React.useState(true);
+  React.useEffect(() => {
+    const img = new Image();
+    img.src = 'juris-fachada.png';
+    img.onload = () => setExtremaBgLoaded(true);
+    img.onerror = () => setExtremaBgLoaded(false);
+  }, []);
+  const extremaBgStyle = extremaBgLoaded
+    ? { backgroundImage: "url('juris-fachada.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }
+    : { backgroundColor: '#f3f4f6' };
   return (
     <div className="bg-white">
       
       {/* Pattern A: Editorial Split Hero */}
       <div className="grid lg:grid-cols-2 min-h-[85vh] lg:h-[800px]">
-         <div className="order-2 lg:order-1 relative h-96 lg:h-auto">
-             <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Business Growth" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="order-2 lg:order-1 relative h-96 lg:h-auto" style={extremaBgStyle}>
              <div className="absolute inset-0 bg-juris-blue/40 mix-blend-multiply"></div>
          </div>
          <div className="order-1 lg:order-2 bg-white p-12 lg:p-24 flex flex-col justify-center">
              <div className="inline-flex items-center gap-2 text-juris-yellow font-bold uppercase tracking-widest text-xs mb-8">
-                <TrendingUp size={16} /> Unidade Online
+                <CalendarDays size={16} /> Online ou Agendamento
              </div>
-             <h1 className="text-5xl lg:text-7xl font-serif font-bold text-juris-blue mb-8 leading-[1.05]">
+            <h1 className="text-5xl lg:text-7xl font-sora font-bold text-juris-blue mb-8 leading-[1.05]">
                  Juris Contabilidade <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-yellow-600">Extrema</span>
              </h1>
              <p className="text-xl text-gray-600 font-medium mb-12 max-w-md leading-relaxed">
-                 Assessoria contábil para empresas que buscam crescimento estruturado, organização fiscal e decisões mais seguras.
+                 Assessoria contábil para empresas que buscam crescimento estruturado, organização fiscal e decisões mais seguras. Atendimento online ou presencial por agendamento.
              </p>
              <div className="flex flex-wrap gap-4">
                  <a href="mailto:Adm@juriscontabil.com.br" className="bg-juris-blue text-white px-8 py-4 rounded-btn font-bold hover:bg-juris-dark transition flex items-center shadow-lg">
                     <Mail className="mr-2 h-4 w-4" /> Falar com a unidade
+                 </a>
+                 <a href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." target="_blank" rel="noopener noreferrer" className="border-2 border-juris-blue text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-blue-50 transition flex items-center">
+                    <CalendarDays className="mr-2 h-4 w-4" /> Agendar Visita
                  </a>
              </div>
          </div>
@@ -144,12 +156,22 @@ const UnitExtrema: React.FC = () => {
             <p className="text-gray-600 text-lg font-medium mb-10">
                 Fale com a equipe da Juris Contabilidade Extrema e estruture seu crescimento.
             </p>
-            <a 
-                href="mailto:Adm@juriscontabil.com.br" 
-                className="inline-block bg-juris-blue hover:bg-juris-dark text-white px-10 py-5 rounded-btn font-bold text-sm uppercase tracking-wide transition shadow-hover"
-            >
-                Falar com consultor
-            </a>
+            <div className="flex flex-wrap justify-center gap-4">
+                <a 
+                    href="mailto:Adm@juriscontabil.com.br" 
+                    className="inline-block bg-juris-blue hover:bg-juris-dark text-white px-10 py-5 rounded-btn font-bold text-sm uppercase tracking-wide transition shadow-hover"
+                >
+                    Falar com consultor
+                </a>
+                <a 
+                    href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block bg-white border-2 border-juris-blue text-juris-blue hover:bg-blue-50 px-10 py-5 rounded-btn font-bold text-sm uppercase tracking-wide transition shadow-hover"
+                >
+                    Agendar Visita
+                </a>
+            </div>
         </div>
       </div>
     </div>

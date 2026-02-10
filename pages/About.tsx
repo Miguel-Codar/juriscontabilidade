@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, Users, Building2, TrendingUp } from 'lucide-react';
 
 const About: React.FC = () => {
+  const [aboutBgLoaded, setAboutBgLoaded] = React.useState(true);
+  React.useEffect(() => {
+    const img = new Image();
+    img.src = 'juris-interna.png';
+    img.onload = () => setAboutBgLoaded(true);
+    img.onerror = () => setAboutBgLoaded(false);
+  }, []);
+  const aboutBgStyle = aboutBgLoaded
+    ? { backgroundImage: "url('juris-interna.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }
+    : { backgroundColor: '#f3f4f6' };
   return (
     <div className="bg-white min-h-screen">
       
@@ -16,7 +26,7 @@ const About: React.FC = () => {
                  <div className="h-px w-8 bg-juris-yellow"></div>
                  <span className="text-juris-blue font-bold uppercase tracking-widest text-xs">Sobre a Juris</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-juris-blue leading-[1.1] mb-8 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-sora font-bold text-juris-blue leading-[1.1] mb-8 text-balance">
                 Tradição, estratégia e soluções contábeis para empresas de diferentes perfis
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed font-medium mb-8">
@@ -35,8 +45,7 @@ const About: React.FC = () => {
             </div>
           </div>
           {/* Right: Visual */}
-          <div className="relative h-96 lg:h-auto bg-gray-100 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" alt="Equipe Juris" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="relative h-96 lg:h-auto bg-gray-100 overflow-hidden" style={aboutBgStyle}>
              <div className="absolute inset-0 bg-juris-blue/80 mix-blend-multiply"></div>
              <div className="absolute bottom-12 left-12 right-12 text-white">
                 <p className="font-serif text-2xl italic opacity-90">"Segurança e compromisso em cada decisão estratégica."</p>

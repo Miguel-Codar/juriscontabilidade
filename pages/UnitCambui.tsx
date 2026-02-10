@@ -21,7 +21,7 @@ const UnitCambui: React.FC = () => {
              <div className="inline-flex items-center gap-2 text-juris-yellow font-bold uppercase tracking-widest text-xs mb-8">
                 <MapPin size={16} /> Unidade Presencial
              </div>
-             <h1 className="text-5xl lg:text-7xl font-serif font-bold mb-8 leading-[1.05]">
+             <h1 className="text-5xl lg:text-7xl font-sora font-bold mb-8 leading-[1.05]">
                  Juris Contabilidade <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-white">Cambuí</span>
              </h1>
              <p className="text-xl text-blue-100 font-medium mb-12 max-w-md leading-relaxed">
@@ -37,7 +37,12 @@ const UnitCambui: React.FC = () => {
              </div>
          </div>
          <div className="relative h-96 lg:h-auto">
-             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Escritório Cambuí" className="absolute inset-0 w-full h-full object-cover" />
+             {/* Updated to use internal photo with relative path */}
+             <img 
+                src="juris-interna.png" 
+                alt="Escritório Cambuí" 
+                className="absolute inset-0 w-full h-full object-cover" 
+             />
              <div className="absolute inset-0 bg-juris-blue/20"></div>
          </div>
       </div>

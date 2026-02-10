@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, Instagram, MapPin } from 'lucide-react';
+import { Menu, X, Phone, Mail, Instagram, MapPin, CalendarDays } from 'lucide-react';
 
 // --- Header Component ---
 const Navbar: React.FC = () => {
@@ -25,10 +25,14 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div className="flex justify-between items-center h-24">
-          {/* Logo Area */}
+          {/* Logo Area - Uses image files from public folder (Relative path) */}
           <Link to="/" className="group flex flex-col justify-center">
-            <span className="text-3xl font-serif font-bold text-juris-blue tracking-tight group-hover:text-juris-dark transition-colors">Juris</span>
-            <span className="text-[10px] font-sans font-bold text-juris-yellow uppercase tracking-[0.2em] leading-none mt-1">Contabilidade</span>
+            <img 
+              src="logo-header.png" 
+              alt="Juris Contabilidade" 
+              className="h-16 md:h-20 w-auto object-contain"
+              onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'logo-symbol.png'; }}
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -66,7 +70,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen">
+        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen z-50">
           <div className="px-6 py-6 space-y-2">
             {navLinks.map((link) => (
               <Link
@@ -99,8 +103,13 @@ const Footer: React.FC = () => {
           {/* Column 1: Brand Info (4 cols) */}
           <div className="md:col-span-4">
             <div className="flex flex-col mb-8">
-              <span className="text-4xl font-serif font-bold text-white">Juris</span>
-              <span className="text-xs font-sans text-juris-yellow font-bold uppercase tracking-[0.25em]">Contabilidade</span>
+              {/* Footer Logo (Relative path) */}
+              <img 
+                src="logo-symbol.png" 
+                alt="Juris Contabilidade" 
+                className="h-14 md:h-16 w-auto object-contain mb-4"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'logo-symbol.png'; }}
+              />
             </div>
             <p className="text-blue-100/80 text-base font-medium leading-relaxed mb-8 pr-8">
               Tradição, estratégia e soluções contábeis para empresas de diferentes perfis.
@@ -150,12 +159,12 @@ const Footer: React.FC = () => {
                 </div>
               </li>
               <li className="flex items-start pt-6 border-t border-white/10 group">
-                <MapPin className="mr-4 mt-0.5 flex-shrink-0 text-juris-yellow group-hover:text-white transition-colors" size={20} strokeWidth={2} />
+                <CalendarDays className="mr-4 mt-0.5 flex-shrink-0 text-juris-yellow group-hover:text-white transition-colors" size={20} strokeWidth={2} />
                 <div>
                   <span className="block text-white font-bold mb-1 font-serif text-lg">Extrema</span>
-                  <span className="text-blue-200 flex items-center font-medium">
-                    Apenas atendimento online
-                    <span className="ml-3 w-2.5 h-2.5 rounded-full bg-green-400 block shadow-[0_0_10px_rgba(74,222,128,0.5)]"></span>
+                  <span className="text-blue-200 flex flex-col font-medium">
+                    <span>Atendimento online ou por agendamento</span>
+                    <a href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-yellow underline hover:text-white mt-1 transition-colors">Agendar visita na unidade</a>
                   </span>
                 </div>
               </li>
@@ -176,7 +185,7 @@ const Footer: React.FC = () => {
   );
 };
 
-// --- Floating WhatsApp (Updated) ---
+// --- Floating WhatsApp ---
 const FloatingWhatsApp: React.FC = () => {
   return (
     <a

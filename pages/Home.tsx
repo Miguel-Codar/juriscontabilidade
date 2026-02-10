@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MapPin, TrendingUp } from 'lucide-react';
+import { ArrowRight, MapPin, TrendingUp, CalendarDays } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -19,12 +19,12 @@ const Home: React.FC = () => {
             <span className="text-juris-yellow uppercase tracking-[0.2em] text-xs font-extrabold mb-8 border border-white/20 px-5 py-2 rounded-full bg-white/5 backdrop-blur-sm">
               Contabilidade Especializada
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-8 leading-[1.05] tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-sora font-bold mb-8 leading-[1.05] tracking-tight text-white">
               Soluções ideais para o seu negócio, <br className="hidden md:block"/>
               <span className="text-blue-200 italic font-serif">em cada fase da sua empresa</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-2xl mb-12 font-medium leading-relaxed">
-              Assessoria contábil especializada para empresas do MEI ao Lucro Real. 
+              Assessoria contábil especializada para empresas do Simples Nacional ao Lucro Real. 
               Estrutura robusta e atendimento personalizado.
             </p>
             
@@ -43,9 +43,10 @@ const Home: React.FC = () => {
             className="group relative h-[480px] rounded-card overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-2 block border border-gray-100"
           >
             <div className="absolute inset-0 bg-gray-900">
+               {/* Updated to use facade photo with relative path */}
                <img 
-                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                 alt="Unidade Cambuí" 
+                 src="juris-fachada.png" 
+                 alt="Unidade Cambuí - Fachada" 
                  className="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-juris-blue/90 via-juris-blue/40 to-transparent"></div>
@@ -85,12 +86,12 @@ const Home: React.FC = () => {
             <div className="absolute inset-0 p-10 flex flex-col justify-end">
               <div className="transform transition duration-500 group-hover:-translate-y-2">
                 <div className="flex items-center text-white mb-4 bg-white/10 w-fit px-3 py-1 rounded-full backdrop-blur-md">
-                   <TrendingUp size={16} className="mr-2 text-juris-yellow" strokeWidth={2.5} />
-                   <span className="uppercase tracking-widest text-[10px] font-extrabold">Unidade Online</span>
+                   <CalendarDays size={16} className="mr-2 text-juris-yellow" strokeWidth={2.5} />
+                   <span className="uppercase tracking-widest text-[10px] font-extrabold">Online ou Agendamento</span>
                 </div>
                 <h3 className="text-4xl font-serif font-bold text-white mb-4">Juris Extrema</h3>
                 <p className="text-blue-100 mb-8 font-medium text-base md:text-lg max-w-sm leading-relaxed">
-                  Atendimento digital especializado para crescimento. Foco em incentivos e expansão.
+                  Atendimento online ou presencial por agendamento. Foco em incentivos e expansão.
                 </p>
                 <div className="inline-flex items-center text-juris-yellow text-sm font-extrabold uppercase tracking-wide border-b-2 border-juris-yellow pb-1 group-hover:text-white group-hover:border-white transition-colors">
                   Acessar Unidade <ArrowRight className="ml-2 w-5 h-5" strokeWidth={3} />

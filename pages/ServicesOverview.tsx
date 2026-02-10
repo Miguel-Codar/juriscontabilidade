@@ -10,7 +10,7 @@ const ServicesOverview: React.FC = () => {
          <div className="absolute top-0 left-0 w-full h-full opacity-10" style={{backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '24px 24px'}}></div>
          <div className="container mx-auto px-4 relative z-10">
              <span className="text-juris-yellow font-bold uppercase tracking-widest text-xs mb-4 block">Nossas Soluções</span>
-             <h1 className="text-3xl md:text-5xl font-serif font-bold text-white max-w-3xl mx-auto leading-tight">
+            <h1 className="text-3xl md:text-5xl font-sora font-bold text-white max-w-3xl mx-auto leading-tight">
                 Escolha a unidade ideal para as <br/>necessidades do seu negócio
              </h1>
          </div>

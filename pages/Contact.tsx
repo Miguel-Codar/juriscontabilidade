@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, MessageCircle, ArrowRight, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle, ArrowRight, Instagram, CalendarDays } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Contact: React.FC = () => {
@@ -66,12 +66,11 @@ const Contact: React.FC = () => {
                     <h3 className="text-2xl font-serif font-bold text-juris-blue mb-6">Extrema</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
-                            <MapPin className="text-gray-400 mr-3 mt-1 flex-shrink-0" size={18} />
-                            <span className="text-gray-600 font-bold text-sm">Apenas atendimento online</span>
+                            <CalendarDays className="text-gray-400 mr-3 mt-1 flex-shrink-0" size={18} />
+                            <span className="text-gray-600 font-bold text-sm">Atendimento online ou por agendamento</span>
                         </li>
                         <li className="flex items-center">
-                             <Instagram className="text-gray-300 mr-3" size={18} />
-                            <span className="text-gray-400 italic font-medium text-sm">Em breve</span>
+                            <a href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-blue underline text-sm font-bold hover:text-juris-dark">Agendar visita na unidade</a>
                         </li>
                     </ul>
                 </div>
