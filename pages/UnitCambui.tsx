@@ -1,9 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Phone, CheckCircle, MapPin, Building, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Phone, CheckCircle, MapPin, Building, ChevronDown, ChevronUp } from 'lucide-react';
 
 const UnitCambui: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const cambuiPhotos: string[] = [
+    new URL("../public/Captura de Tela 2026-02-23 às 16.10.30.png", import.meta.url).href,
+    new URL("../public/Captura de Tela 2026-02-23 às 16.10.36.png", import.meta.url).href,
+    new URL("../public/Captura de Tela 2026-02-23 às 16.10.45.png", import.meta.url).href,
+    new URL("../public/Captura de Tela 2026-02-23 às 16.10.52.png", import.meta.url).href,
+  ];
+  const [photoIndex, setPhotoIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setPhotoIndex((i) => (i + 1) % cambuiPhotos.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
+
+  const goToPreviousPhoto = () => {
+    setPhotoIndex((i) => (i - 1 + cambuiPhotos.length) % cambuiPhotos.length);
+  };
+
+  const goToNextPhoto = () => {
+    setPhotoIndex((i) => (i + 1) % cambuiPhotos.length);
+  };
 
   const accordionItems = [
     { title: "Assessoria completa do MEI ao Lucro Real", content: "Atendemos todos os regimes tributários com a mesma excelência técnica, garantindo conformidade e segurança." },
@@ -36,14 +57,44 @@ const UnitCambui: React.FC = () => {
                  </a>
              </div>
          </div>
-         <div className="relative h-96 lg:h-auto">
-             {/* Updated to use internal photo with relative path */}
-             <img 
-                src="juris-interna.png" 
-                alt="Escritório Cambuí" 
-                className="absolute inset-0 w-full h-full object-cover" 
-             />
+         <div className="relative h-96 lg:h-auto overflow-hidden">
+             {cambuiPhotos.map((src, index) => (
+               <img
+                 key={src}
+                 src={src}
+                 alt="Unidade Cambuí"
+                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                   index === photoIndex ? "opacity-100" : "opacity-0"
+                 }`}
+               />
+             ))}
              <div className="absolute inset-0 bg-juris-blue/20"></div>
+             <button
+               type="button"
+               onClick={goToPreviousPhoto}
+               className="absolute left-4 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/60"
+             >
+               <ArrowLeft className="h-5 w-5" />
+             </button>
+             <button
+               type="button"
+               onClick={goToNextPhoto}
+               className="absolute right-4 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/60"
+             >
+               <ArrowRight className="h-5 w-5" />
+             </button>
+             <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+               {cambuiPhotos.map((_, index) => (
+                 <button
+                   key={index}
+                   type="button"
+                   onClick={() => setPhotoIndex(index)}
+                   className={`h-2.5 w-2.5 rounded-full border border-white/70 ${
+                     index === photoIndex ? "bg-white" : "bg-white/30"
+                   }`}
+                 />
+               ))}
+             </div>
          </div>
       </div>
 
