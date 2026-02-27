@@ -76,7 +76,7 @@ const Home: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gray-900">
                <img 
-                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                 src="extrema-alegria-e-extrema-grandeza-cidade-de-extrema-o-limite-glorioso-de-minas-gerais-1652899164.jpg" 
                  alt="Unidade Extrema" 
                  className="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
                />

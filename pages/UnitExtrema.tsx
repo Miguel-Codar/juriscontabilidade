@@ -6,12 +6,12 @@ const UnitExtrema: React.FC = () => {
   const [extremaBgLoaded, setExtremaBgLoaded] = React.useState(true);
   React.useEffect(() => {
     const img = new Image();
-    img.src = 'juris-fachada.png';
+    img.src = 'extrema-alegria-e-extrema-grandeza-cidade-de-extrema-o-limite-glorioso-de-minas-gerais-1652899164.jpg';
     img.onload = () => setExtremaBgLoaded(true);
     img.onerror = () => setExtremaBgLoaded(false);
   }, []);
   const extremaBgStyle = extremaBgLoaded
-    ? { backgroundImage: "url('juris-fachada.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }
+    ? { backgroundImage: "url('extrema-alegria-e-extrema-grandeza-cidade-de-extrema-o-limite-glorioso-de-minas-gerais-1652899164.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }
     : { backgroundColor: '#f3f4f6' };
   return (
     <div className="bg-white">
