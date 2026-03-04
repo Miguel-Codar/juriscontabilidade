@@ -6,7 +6,7 @@ const UnitExtremaServices: React.FC = () => {
   const [filter, setFilter] = useState('');
 
   const services = [
-       "Assessoria Contábil Completa (do MEI ao Lucro Real)",
+       "Assessoria Contábil Completa (do Simples Nacional ao Lucro Real)",
        "Planejamento Tributário",
        "Incentivos Fiscais de Minas Gerais",
        "Assessoria Fiscal e Tributária",

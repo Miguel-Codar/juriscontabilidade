@@ -30,7 +30,7 @@ const About: React.FC = () => {
                 Tradição, estratégia e soluções contábeis para empresas de diferentes perfis
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed font-medium mb-8">
-                A Juris Contabilidade atua há décadas oferecendo assessoria contábil, tributária, fiscal e financeira para empresas que buscam segurança, organização e crescimento sustentável.
+                A Juris Contábil atua há décadas oferecendo assessoria contábil, tributária, fiscal e financeira para empresas que buscam segurança, organização e crescimento sustentável.
               </p>
               <div className="flex gap-4">
                  <div className="bg-blue-50 px-6 py-4 rounded-card border-l-4 border-juris-blue">
@@ -58,13 +58,13 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8 py-20 lg:py-24 max-w-4xl">
          <div className="prose prose-lg text-gray-600 font-medium">
             <p className="lead text-2xl text-juris-blue font-serif font-bold">
-              Com uma atuação sólida em Minas Gerais, atendemos negócios em diferentes estágios, do MEI ao Lucro Real, sempre com foco em orientação clara, conformidade legal e apoio estratégico à tomada de decisões.
+              Com uma atuação sólida em Minas Gerais, atendemos negócios em diferentes estágios, do Simples Nacional ao Lucro Real, sempre com foco em orientação clara, conformidade legal e apoio estratégico à tomada de decisões.
             </p>
             <p>
               Ao longo da nossa história, estruturamos duas unidades com perfis complementares, pensadas para atender realidades empresariais distintas, sem abrir mão do mesmo padrão de qualidade, responsabilidade técnica e compromisso com o cliente.
             </p>
             <p>
-              Para oferecer um atendimento mais próximo e direcionado, a Juris Contabilidade está presente em Cambuí e Extrema, com equipes e especializações alinhadas às demandas de cada região.
+              Para oferecer um atendimento mais próximo e direcionado, a Juris Contábil está presente em Cambuí e Extrema, com equipes e especializações alinhadas às demandas de cada região.
             </p>
             <p>
               Cada unidade mantém a mesma base técnica e institucional, mas com foco em segmentos e estruturas empresariais específicas, garantindo um atendimento mais eficiente e adequado à realidade de cada empresa.

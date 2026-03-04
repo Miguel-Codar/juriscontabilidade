@@ -26,11 +26,7 @@ const UnitCambuiServices: React.FC = () => {
     "Malha Fiscal – Receita Federal",
     "ITR, CCIR e CAR",
     "Regularização de Obras e Imóveis",
-    "Pesquisa Cadastral na Receita Federal",
-    "Decore Eletrônico",
-    "Processos Licitatórios",
-    "Treinamento em Gestão Empresarial",
-    "AVCB e Radar de Importação"
+    "Pesquisa Cadastral na Receita Federal"
   ];
 
   const allServices = [...mainServices, ...specializedServices];
@@ -116,7 +112,7 @@ const UnitCambuiServices: React.FC = () => {
 
         <div className="mt-16 text-center">
             <a 
-                href="https://wa.me/5535988626486" 
+                href="https://wa.me/553534311200" 
                 target="_blank" 
                 rel="noreferrer"
                 className="bg-juris-blue hover:bg-juris-dark text-white px-10 py-4 rounded-btn font-bold uppercase tracking-wide transition inline-block shadow-lg"

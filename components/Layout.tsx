@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
               {/* Footer Logo (Relative path) */}
               <img 
                 src="logo-symbol.png" 
-                alt="Juris Contabilidade" 
+                alt="Juris Contábil" 
                 className="h-14 md:h-16 w-auto object-contain mb-4"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'logo-symbol.png'; }}
               />
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
                 <Phone className="mr-4 mt-0.5 flex-shrink-0 text-juris-yellow group-hover:text-white transition-colors" size={20} strokeWidth={2} />
                 <div>
                   <a href="tel:3534311200" className="block hover:text-white transition-colors mb-1 text-base font-bold">(35) 3431-1200</a>
-                  <a href="https://wa.me/5535988626486" className="block text-xs font-bold text-juris-yellow uppercase tracking-wide hover:text-white transition-colors">WhatsApp: (35) 98862-6486</a>
+                  <a href="https://wa.me/553534311200" className="block text-xs font-bold text-juris-yellow uppercase tracking-wide hover:text-white transition-colors">WhatsApp: (35) 3431-1200</a>
                 </div>
               </li>
               <li className="flex items-start pt-6 border-t border-white/10 group">
@@ -164,7 +164,8 @@ const Footer: React.FC = () => {
                   <span className="block text-white font-bold mb-1 font-serif text-lg">Extrema</span>
                   <span className="text-blue-200 flex flex-col font-medium">
                     <span>Atendimento online ou por agendamento</span>
-                    <a href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-yellow underline hover:text-white mt-1 transition-colors">Agendar visita na unidade</a>
+                    <a href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-yellow underline hover:text-white mt-1 transition-colors">Agendar visita na unidade</a>
+                    <a href="tel:3534600534" className="block text-xs font-bold text-juris-yellow uppercase tracking-wide hover:text-white transition-colors mt-2">Tel/WhatsApp: (35) 3460-0534</a>
                   </span>
                 </div>
               </li>
@@ -173,7 +174,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center text-xs font-bold text-blue-300/60 tracking-widest uppercase">
-          <p>&copy; {new Date().getFullYear()} Juris Contabilidade.</p>
+          <p>&copy; {new Date().getFullYear()} Juris Contábil.</p>
           <div className="mt-4 md:mt-0 flex space-x-8">
              <span>CRC-MG</span>
              <span>FENACON</span>
@@ -189,7 +190,7 @@ const Footer: React.FC = () => {
 const FloatingWhatsApp: React.FC = () => {
   return (
     <a
-      href="https://wa.me/5535988626486"
+      href="https://wa.me/553534311200"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-40 bg-[#25D366] hover:bg-[#20b85c] text-white p-4 rounded-full shadow-hover transition-all duration-300 transform hover:-translate-y-1 group flex items-center gap-3 pr-6 border-2 border-white/20"

@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                         </li>
                         <li className="flex items-center">
                             <MessageCircle className="text-green-500 mr-3" size={18} />
-                            <a href="https://wa.me/5535988626486" className="text-gray-600 font-bold hover:text-green-600 transition-colors">(35) 98862-6486</a>
+                            <a href="https://wa.me/553534311200" className="text-gray-600 font-bold hover:text-green-600 transition-colors">(35) 3431-1200</a>
                         </li>
                         <li className="flex items-center">
                             <Instagram className="text-pink-500 mr-3" size={18} />
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                             <span className="text-gray-600 font-bold text-sm">Atendimento online ou por agendamento</span>
                         </li>
                         <li className="flex items-center">
-                            <a href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-blue underline text-sm font-bold hover:text-juris-dark">Agendar visita na unidade</a>
+                            <a href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-blue underline text-sm font-bold hover:text-juris-dark">Agendar visita na unidade</a>
                         </li>
                     </ul>
                 </div>

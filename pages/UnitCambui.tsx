@@ -27,7 +27,7 @@ const UnitCambui: React.FC = () => {
   };
 
   const accordionItems = [
-    { title: "Assessoria completa do MEI ao Lucro Real", content: "Atendemos todos os regimes tributários com a mesma excelência técnica, garantindo conformidade e segurança." },
+    { title: "Assessoria completa do Simples Nacional ao Lucro Real", content: "Atendemos todos os regimes tributários com a mesma excelência técnica, garantindo conformidade e segurança." },
     { title: "Forte atuação em Lucro Real", content: "Diferencial na região, com equipe especializada para empresas de maior complexidade tributária." },
     { title: "Especialização em Incentivos Fiscais MG", content: "Expertise profunda na legislação mineira para otimizar a carga tributária da sua empresa legalmente." },
     { title: "Estruturas empresariais complexas", content: "Preparados para holdings, grupos econômicos e operações sofisticadas." }
@@ -43,13 +43,13 @@ const UnitCambui: React.FC = () => {
                 <MapPin size={16} /> Unidade Presencial
              </div>
              <h1 className="text-5xl lg:text-7xl font-sora font-bold mb-8 leading-[1.05]">
-                 Juris Contabilidade <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-white">Cambuí</span>
+                 Juris Contábil <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-white">Cambuí</span>
              </h1>
              <p className="text-xl text-blue-100 font-medium mb-12 max-w-md leading-relaxed">
                  Assessoria contábil para empresas que buscam segurança, organização e decisões estratégicas.
              </p>
              <div className="flex flex-wrap gap-4">
-                 <a href="https://wa.me/5535988626486" className="bg-juris-yellow text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-white transition flex items-center">
+                 <a href="https://wa.me/553534311200" className="bg-juris-yellow text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-white transition flex items-center">
                     <Phone className="mr-2 h-4 w-4" /> Falar com a unidade
                  </a>
                  <a href="tel:3534311200" className="border border-white/30 text-white px-8 py-4 rounded-btn font-bold hover:bg-white/10 transition">
@@ -225,10 +225,10 @@ const UnitCambui: React.FC = () => {
         <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-4xl font-serif font-bold text-juris-blue mb-6">Pronto para organizar sua empresa?</h2>
             <p className="text-gray-600 text-lg font-medium mb-10">
-                Fale com a equipe da Juris Contabilidade Cambuí e agende uma conversa.
+                Fale com a equipe da Juris Contábil Cambuí e agende uma conversa.
             </p>
             <a 
-                href="https://wa.me/5535988626486" 
+                href="https://wa.me/553534311200" 
                 target="_blank" 
                 rel="noreferrer"
                 className="bg-juris-blue text-white px-10 py-5 rounded-btn font-bold hover:bg-juris-dark transition shadow-hover inline-flex items-center"

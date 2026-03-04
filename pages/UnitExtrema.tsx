@@ -26,7 +26,7 @@ const UnitExtrema: React.FC = () => {
                 <CalendarDays size={16} /> Online ou Agendamento
              </div>
             <h1 className="text-5xl lg:text-7xl font-sora font-bold text-juris-blue mb-8 leading-[1.05]">
-                 Juris Contabilidade <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-yellow-600">Extrema</span>
+                 Juris Contábil <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-yellow-600">Extrema</span>
              </h1>
              <p className="text-xl text-gray-600 font-medium mb-12 max-w-md leading-relaxed">
                  Assessoria contábil para empresas que buscam crescimento estruturado, organização fiscal e decisões mais seguras. Atendimento online ou presencial por agendamento.
@@ -35,7 +35,7 @@ const UnitExtrema: React.FC = () => {
                  <a href="mailto:Adm@juriscontabil.com.br" className="bg-juris-blue text-white px-8 py-4 rounded-btn font-bold hover:bg-juris-dark transition flex items-center shadow-lg">
                     <Mail className="mr-2 h-4 w-4" /> Falar com a unidade
                  </a>
-                 <a href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." target="_blank" rel="noopener noreferrer" className="border-2 border-juris-blue text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-blue-50 transition flex items-center">
+                 <a href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." target="_blank" rel="noopener noreferrer" className="border-2 border-juris-blue text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-blue-50 transition flex items-center">
                     <CalendarDays className="mr-2 h-4 w-4" /> Agendar Visita
                  </a>
              </div>
@@ -154,7 +154,7 @@ const UnitExtrema: React.FC = () => {
         <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-4xl font-serif font-bold text-juris-blue mb-6">Sua empresa em expansão?</h2>
             <p className="text-gray-600 text-lg font-medium mb-10">
-                Fale com a equipe da Juris Contabilidade Extrema e estruture seu crescimento.
+                Fale com a equipe da Juris Contábil Extrema e estruture seu crescimento.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                 <a 
@@ -164,7 +164,7 @@ const UnitExtrema: React.FC = () => {
                     Falar com consultor
                 </a>
                 <a 
-                    href="https://wa.me/5535988626486?text=Olá, gostaria de agendar uma visita na unidade de Extrema." 
+                    href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-white border-2 border-juris-blue text-juris-blue hover:bg-blue-50 px-10 py-5 rounded-btn font-bold text-sm uppercase tracking-wide transition shadow-hover"
