@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Mail, Check, TrendingUp, BarChart3, Globe, Zap, CalendarDays } from 'lucide-react';
+import { ArrowRight, Mail, Check, TrendingUp, BarChart3, Globe, Zap, CalendarDays, Phone } from 'lucide-react';
 
 const UnitExtrema: React.FC = () => {
   const [extremaBgLoaded, setExtremaBgLoaded] = React.useState(true);
@@ -32,13 +32,16 @@ const UnitExtrema: React.FC = () => {
                  Assessoria contábil para empresas que buscam crescimento estruturado, organização fiscal e decisões mais seguras. Atendimento online ou presencial por agendamento.
              </p>
              <div className="flex flex-wrap gap-4">
-                 <a href="mailto:Adm@juriscontabil.com.br" className="bg-juris-blue text-white px-8 py-4 rounded-btn font-bold hover:bg-juris-dark transition flex items-center shadow-lg">
-                    <Mail className="mr-2 h-4 w-4" /> Falar com a unidade
-                 </a>
-                 <a href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." target="_blank" rel="noopener noreferrer" className="border-2 border-juris-blue text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-blue-50 transition flex items-center">
-                    <CalendarDays className="mr-2 h-4 w-4" /> Agendar Visita
-                 </a>
-             </div>
+                <a href="mailto:Adm@juriscontabil.com.br" className="bg-juris-blue text-white px-8 py-4 rounded-btn font-bold hover:bg-juris-dark transition flex items-center shadow-lg">
+                   <Mail className="mr-2 h-4 w-4" /> Falar com a unidade
+                </a>
+                <a href="tel:3534600534" className="border-2 border-juris-blue text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-blue-50 transition flex items-center">
+                   <Phone className="mr-2 h-4 w-4" /> (35) 3460-0534
+                </a>
+                <a href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." target="_blank" rel="noopener noreferrer" className="border-2 border-juris-blue text-juris-blue px-8 py-4 rounded-btn font-bold hover:bg-blue-50 transition flex items-center">
+                   <CalendarDays className="mr-2 h-4 w-4" /> Agendar Visita
+                </a>
+            </div>
          </div>
       </div>
 
