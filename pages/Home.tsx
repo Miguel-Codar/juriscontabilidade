@@ -112,8 +112,6 @@ const Home: React.FC = () => {
                <span className="font-serif text-3xl text-juris-blue font-extrabold tracking-tighter">FENACON</span>
                <div className="h-1.5 w-1.5 bg-gray-300 rounded-full hidden md:block"></div>
                <span className="font-serif text-3xl text-juris-blue font-extrabold tracking-tighter">SESCON</span>
-               <div className="h-1.5 w-1.5 bg-gray-300 rounded-full hidden md:block"></div>
-               <span className="font-sans text-sm font-bold tracking-[0.2em] uppercase text-gray-400">Excelência Contábil</span>
             </div>
         </div>
       </div>

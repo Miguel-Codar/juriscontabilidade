@@ -108,7 +108,7 @@ const ServicesOverview: React.FC = () => {
                
                {/* Context Block for Extrema */}
                <div className="bg-gradient-to-br from-juris-blue to-juris-dark rounded-card p-10 text-white flex flex-col justify-center">
-                   <h3 className="text-3xl font-serif font-bold mb-6">Pronto para crescer?</h3>
+                   <h3 className="text-3xl font-serif font-bold mb-6 text-white">Pronto para crescer?</h3>
                    <p className="text-blue-100 text-lg mb-8 font-medium leading-relaxed">
                        A unidade de Extrema é preparada para empresas em expansão que precisam de agilidade e inteligência fiscal.
                    </p>

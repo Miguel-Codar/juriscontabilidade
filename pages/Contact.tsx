@@ -70,6 +70,10 @@ const Contact: React.FC = () => {
                             <span className="text-gray-600 font-bold text-sm">Atendimento online ou por agendamento</span>
                         </li>
                         <li className="flex items-center">
+                            <Phone className="text-gray-400 mr-3" size={18} />
+                            <a href="tel:3534600534" className="text-gray-600 font-bold hover:text-juris-blue transition-colors">(35) 3460-0534</a>
+                        </li>
+                        <li className="flex items-center">
                             <a href="https://wa.me/553534600534?text=Olá, gostaria de agendar uma visita na unidade de Extrema." className="text-juris-blue underline text-sm font-bold hover:text-juris-dark">Agendar visita na unidade</a>
                         </li>
                     </ul>
