@@ -26,7 +26,7 @@ const UnitExtrema: React.FC = () => {
                 <CalendarDays size={16} /> Online ou Agendamento
              </div>
             <h1 className="text-5xl lg:text-7xl font-sora font-bold text-juris-blue mb-8 leading-[1.05]">
-                 Juris Contábil <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-yellow-600">Extrema</span>
+                 Juriscontábil <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-yellow-600">Extrema</span>
              </h1>
              <p className="text-xl text-gray-600 font-medium mb-12 max-w-md leading-relaxed">
                  Assessoria contábil para empresas que buscam crescimento estruturado, organização fiscal e decisões mais seguras. Atendimento online ou presencial por agendamento.
@@ -89,9 +89,10 @@ const UnitExtrema: React.FC = () => {
              {[
                  { icon: Globe, title: "Assessoria Contábil", desc: "Completa, do MEI ao Lucro Real, com foco digital.", meta: "Digital" },
                  { icon: Zap, title: "Incentivos Fiscais MG", desc: "Recuperação de créditos e Regimes Especiais (TTs).", meta: "Estratégia" },
-                 { icon: BarChart3, title: "Planejamento Tributário", desc: "Análise profunda para redução de carga tributária.", meta: "Economia" },
-                 { icon: TrendingUp, title: "Consultoria Financeira", desc: "Apoio na gestão e crescimento sustentável.", meta: "Gestão" }
-             ].map((item, i) => (
+                { icon: BarChart3, title: "Planejamento Tributário", desc: "Análise profunda para redução de carga tributária.", meta: "Economia" },
+                { icon: TrendingUp, title: "Consultoria Financeira", desc: "Apoio na gestão e crescimento sustentável.", meta: "Gestão" },
+                { icon: Globe, title: "Contabilidade Inteligente e Online", desc: "Gestão ágil e digital para sua empresa.", meta: "Inovação" }
+            ].map((item, i) => (
                  <div key={i} className="group bg-white p-8 rounded-card border border-gray-100 shadow-sm hover:shadow-hover hover:-translate-y-1 transition-all duration-300">
                      <div className="flex justify-between items-start mb-6">
                          <div className="p-3 bg-blue-50 text-juris-blue rounded-lg group-hover:bg-juris-blue group-hover:text-white transition-colors">

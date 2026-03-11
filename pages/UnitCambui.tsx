@@ -43,7 +43,7 @@ const UnitCambui: React.FC = () => {
                 <MapPin size={16} /> Unidade Presencial
              </div>
              <h1 className="text-5xl lg:text-7xl font-sora font-bold mb-8 leading-[1.05]">
-                 Juris Contábil <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-white">Cambuí</span>
+                 Juriscontábil <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-juris-yellow to-white">Cambuí</span>
              </h1>
              <p className="text-xl text-blue-100 font-medium mb-12 max-w-md leading-relaxed">
                  Assessoria contábil para empresas que buscam segurança, organização e decisões estratégicas.

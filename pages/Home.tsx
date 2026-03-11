@@ -58,7 +58,7 @@ const Home: React.FC = () => {
                    <MapPin size={16} className="mr-2 text-juris-yellow" strokeWidth={2.5} />
                    <span className="uppercase tracking-widest text-[10px] font-extrabold">Unidade Presencial</span>
                 </div>
-                <h3 className="text-4xl font-serif font-bold text-white mb-4">Juris Cambuí</h3>
+                <h3 className="text-4xl font-serif font-bold text-white mb-4">Juriscontábil Cambuí</h3>
                 <p className="text-blue-100 mb-8 font-medium text-base md:text-lg max-w-sm leading-relaxed">
                   Atendimento presencial e completo para toda região. Estrutura tradicional e consolidada.
                 </p>
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
                    <CalendarDays size={16} className="mr-2 text-juris-yellow" strokeWidth={2.5} />
                    <span className="uppercase tracking-widest text-[10px] font-extrabold">Online ou Agendamento</span>
                 </div>
-                <h3 className="text-4xl font-serif font-bold text-white mb-4">Juris Extrema</h3>
+                <h3 className="text-4xl font-serif font-bold text-white mb-4">Juriscontábil Extrema</h3>
                 <p className="text-blue-100 mb-8 font-medium text-base md:text-lg max-w-sm leading-relaxed">
                   Atendimento online ou presencial por agendamento. Foco em incentivos e expansão.
                 </p>
